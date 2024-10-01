@@ -1,5 +1,5 @@
 {
-  "title": "Services", 
+  "title": "Services",
   "subtitle": "Comment puis-je vous aider ?",
   "text": "Vous avez des besoins court-termes sur la stratégie de développement d'un MVP, sur l'organisation ou le scale de votre delivery ? Je serais ravi de vous aider !",
   "services": {
@@ -22,7 +22,7 @@
     "service5": {
       "title": "Coaching",
       "text": "Comment soutenir vos équipes sur le long terme et les aider à progresser ?"
-    }, 
+    },
     "service6": {
       "title": "Tech lead",
       "text": "Vous avez besoin d'un contributeur sénior dans le cadre du développement d'un produit ou d'une fonctionnalité ?"

@@ -1,8 +1,8 @@
-import {notFound} from 'next/navigation';
-import {getRequestConfig} from 'next-intl/server';
-import {routing} from './routing';
- 
-export default getRequestConfig(async ({locale}) => {
+import { notFound } from "next/navigation";
+import { getRequestConfig } from "next-intl/server";
+import { routing } from "./routing";
+
+export default getRequestConfig(async ({ locale }) => {
   // Validate that the incoming `locale` parameter is valid
   if (!routing.locales.includes(locale as any)) notFound();
 
@@ -12,7 +12,7 @@ export default getRequestConfig(async ({locale}) => {
   const intro = await import(`../messages/${locale}/intro.json`);
   const resume = await import(`../messages/${locale}/resume.json`);
   const services = await import(`../messages/${locale}/services.json`);
- 
+
   return {
     messages: {
       about: about.default,
@@ -21,7 +21,6 @@ export default getRequestConfig(async ({locale}) => {
       intro: intro.default,
       resume: resume.default,
       services: services.default,
-      
-    }
+    },
   };
 });

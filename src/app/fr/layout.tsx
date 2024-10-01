@@ -1,22 +1,22 @@
-import '../../css/vendor.css'
-import '../../css/base.css'
-import '../../css/fonts.css'
-import '../../css/main.css'
+import "../../css/vendor.css";
+import "../../css/base.css";
+import "../../css/fonts.css";
+import "../../css/main.css";
 
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
- 
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+
 export default async function LocaleLayout({
   children,
-  params: {locale}
+  params: { locale },
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 }) {
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
- 
+
   return (
     <html lang={locale}>
       <body>
@@ -27,4 +27,3 @@ export default async function LocaleLayout({
     </html>
   );
 }
-

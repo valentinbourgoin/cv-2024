@@ -5,6 +5,13 @@ import "../../css/main.css";
 
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Valentin Bourgoin - Tech Lead freelance", 
+  description: "CV de Valentin Bourgoin, CTO / CPTO / lead dev indépendant",
+  metadataBase: new URL("https://valentinbourgoin.fr")
+}
 
 export default async function LocaleLayout({
   children,

@@ -6,11 +6,16 @@ import "../../css/main.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Metadata } from 'next';
+import {routing} from '@/i18n/routing';
 
 export const metadata: Metadata = {
   title: "Valentin Bourgoin - Tech Lead freelance", 
   description: "CV de Valentin Bourgoin, CTO / CPTO / lead dev indépendant",
   metadataBase: new URL("https://valentinbourgoin.fr")
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({locale}));
 }
 
 export default async function LocaleLayout({

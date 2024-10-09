@@ -21,6 +21,39 @@ export default function Resume() {
 
         <div className="col-twelve">
           <div className="timeline-wrap">
+
+            <div className="timeline-block">
+              <div className="timeline-ico">
+                <i className="fa fa-briefcase"></i>
+              </div>
+              <div className="timeline-header">
+                <h3>{t("work.work0.title")}</h3>
+                <p>{t("work.work0.date")}</p>
+              </div>
+              <div className="timeline-content">
+                <h4>{t("work.work0.company")}</h4>
+                <div
+                  dangerouslySetInnerHTML={{ __html: t.raw("work.work0.text") }}
+                />
+              </div>
+            </div>
+
+            <div className="timeline-block highlighted">
+              <div className="timeline-ico">
+                <i className="fa fa-briefcase"></i>
+              </div>
+              <div className="timeline-header">
+                <h3>{t("work.work-current.title")}</h3>
+                <p>{t("work.work-current.date")}</p>
+              </div>
+              <div className="timeline-content">
+                <h4>{t("work.work-current.company")}</h4>
+                <div
+                  dangerouslySetInnerHTML={{ __html: t.raw("work.work-current.text") }}
+                />
+              </div>
+            </div>
+
             <div className="timeline-block">
               <div className="timeline-ico">
                 <i className="fa fa-briefcase"></i>

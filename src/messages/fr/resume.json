@@ -2,15 +2,27 @@
   "intro": {
     "title": "Plus d'infos",
     "subtitle": "Mon CV",
-    "text": "Vous trouverez ici mes principales références en tant que CTO, CPO ou ingénieur web."
+    "text": "Vous trouverez ici mes principales références en tant que CTO, CPO, encadrant pédagogique ou dév web sénior."
   },
   "work": {
     "title": "Expériences professionnelles",
+    "work-current": {
+      "title": "Encadrant",
+      "date": "Depuis Déc 2021",
+      "company": "Ada Tech School",
+      "text": "Ada Tech School est la 1ère école d’informatique inclusive à la pédagogie alternative. <br /><hr />Accompagnement de promotions d'apprenant-es. <br />Animation et suivi de rituels. <br />Entretiens de prise de feedback individuels. <hr />Stack : HTML, CSS, Javascript, Python, PHP, ..."
+    },
+    "work0": {
+      "title": "CTO",
+      "date": "Déc 2021 - Sept 2024",
+      "company": "OMAJ",
+      "text": "OMAJ est un dépôt-vente en ligne de vêtements de seconde main qui met la Tech au service d'une mission : botter les fesses de la fast fashion. <br /><hr />Mise en place de la stack technique. <br />Recrutement et management de l'équipe.<br />Construction de la roadmap et staffing. <br />Mise en place d'une méthodologie de travail et suivi des metrics de performance. <hr />Stack : Django (Celery, Redis, Posgres, ...), React, Shopify."
+    },
     "work1": {
       "title": "Senior VP Product",
       "date": "Sept 2016 - Juillet 2021",
       "company": "Sport Heroes",
-      "text": "Sport Heroes est une start-up qui édite un produit SaaS qui permet à plus de 300 partenaires (marques, organisateurs d'événements, ONGs, entreprises) d'engager leurs communautés de clients, collaborateurs ou fans autour du sport connecté et du bien-être.<br /><hr />Management de l'équipe Product & Tech team (environ 25 personnes&nbsp;:&nbsp;Product Managers / Designers, Engineering Managers, développeurs, User Care) en squads agiles. En charge de la priorisation de la roadmap, de la delivery et des processes. <hr />Stack : React / React Native, Node, Mongo, Redis, AWS."
+      "text": "Sport Heroes est une start-up qui édite un produit SaaS qui permet à plus de 300 partenaires (marques, organisateurs d'événements, ONGs, entreprises) d'engager leurs communautés de clients, collaborateurs ou fans autour du sport connecté et du bien-être.<br /><hr />Management de l'équipe Product & Tech team (environ 25 personnes&nbsp;:&nbsp;Product Managers / Designers, Engineering Managers, développeurs, User Care) en squads agiles. <br />En charge de la priorisation de la roadmap, de la delivery et des processes. <hr />Stack : React / React Native, Node, Mongo, Redis, AWS."
     },
     "work2": {
       "title": "Head of Technology",

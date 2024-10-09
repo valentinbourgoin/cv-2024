@@ -10,7 +10,7 @@ export default function About() {
           <h5>{t("intro.title")}</h5>
           <h1>{t("intro.subtitle")}</h1>
           <div className="intro-info">
-            <img src="/images/profile-pic.jpg" alt="Valentin Bourgoin" />
+            <img src="/images/Valentin-Bourgoin.jpeg" alt="Valentin Bourgoin" />
             <div
               className="lead"
               dangerouslySetInnerHTML={{ __html: t.raw("intro.text") }}
@@ -21,7 +21,7 @@ export default function About() {
       <div className="row about-content">
         <div className="col-six tab-full">
           <h3>{t("profile.title")}</h3>
-          <p>{t("profile.text")}</p>
+          <p dangerouslySetInnerHTML={{ __html: t.raw("profile.text")}}></p>
           <ul className="info-list">
             <li>
               <strong>{t("profile.name_title")}</strong>
@@ -49,9 +49,10 @@ export default function About() {
               <div className="progress percent90"></div>
               <strong>{t("skills.skill1")}</strong>
             </li>
+            
             <li>
               <div className="progress percent90"></div>
-              <strong>{t("skills.skill2")}</strong>
+              <strong>{t("skills.skill5")}</strong>
             </li>
             <li>
               <div className="progress percent90"></div>
@@ -61,10 +62,7 @@ export default function About() {
               <div className="progress percent75"></div>
               <strong>{t("skills.skill4")}</strong>
             </li>
-            <li>
-              <div className="progress percent75"></div>
-              <strong>{t("skills.skill5")}</strong>
-            </li>
+            
           </ul>
         </div>
       </div>

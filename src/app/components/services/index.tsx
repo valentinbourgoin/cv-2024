@@ -15,6 +15,37 @@ export default function Services() {
 
       <div className="row services-content">
         <div className="services-list">
+
+          <div className="service">
+            <span className="icon">
+              <i className="fa fa-code fa-stack-1x fa-inverse"></i>
+            </span>
+            <div className="service-content">
+              <h3>{t("services.service6.title")}</h3>
+              <p className="desc">{t("services.service6.text")}</p>
+            </div>
+          </div>
+
+          <div className="service">
+            <span className="icon">
+              <i className="fa fa-users fa-stack-1x fa-inverse"></i>
+            </span>
+            <div className="service-content">
+              <h3>{t("services.service3.title")}</h3>
+              <p className="desc">{t("services.service3.text")}</p>
+            </div>
+          </div>
+
+          <div className="service">
+            <span className="icon">
+              <i className="fa fa-microphone fa-stack-1x fa-inverse"></i>
+            </span>
+            <div className="service-content">
+              <h3>{t("services.service5.title")}</h3>
+              <p className="desc">{t("services.service5.text")}</p>
+            </div>
+          </div>
+
           <div className="service">
             <span className="icon">
               <i className="fa fa-road fa-stack-1x fa-inverse"></i>
@@ -37,16 +68,6 @@ export default function Services() {
 
           <div className="service">
             <span className="icon">
-              <i className="fa fa-users fa-stack-1x fa-inverse"></i>
-            </span>
-            <div className="service-content">
-              <h3>{t("services.service3.title")}</h3>
-              <p className="desc">{t("services.service3.text")}</p>
-            </div>
-          </div>
-
-          <div className="service">
-            <span className="icon">
               <i className="fa fa-stethoscope fa-stack-1x fa-inverse"></i>
             </span>
             <div className="service-content">
@@ -55,25 +76,6 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="service">
-            <span className="icon">
-              <i className="fa fa-microphone fa-stack-1x fa-inverse"></i>
-            </span>
-            <div className="service-content">
-              <h3>{t("services.service5.title")}</h3>
-              <p className="desc">{t("services.service5.text")}</p>
-            </div>
-          </div>
-
-          <div className="service">
-            <span className="icon">
-              <i className="fa fa-code fa-stack-1x fa-inverse"></i>
-            </span>
-            <div className="service-content">
-              <h3>{t("services.service6.title")}</h3>
-              <p className="desc">{t("services.service6.text")}</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

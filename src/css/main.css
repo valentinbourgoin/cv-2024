@@ -74,7 +74,7 @@ body {
 	font-family: "lora-regular", serif;
 	font-size: 1.7rem;
 	line-height: 3rem;
-	color: #6e6e6e;
+	color: #190B28;
 }
 
 /**
@@ -156,7 +156,7 @@ p.lead {
 	font-family: "lora-regular", serif;
 	font-size: 2rem;
 	line-height: 1.8;
-	color: #888888;
+	color: #9B9987;
 }
 @media only screen and (max-width:768px) {
 	p.lead {
@@ -212,7 +212,7 @@ blockquote cite:before {
 	content: "\2014 \0020";
 }
 blockquote cite a, blockquote cite a:visited {
-	color: #888888;
+	color: #9B9987;
 	border: none;
 }
 abbr {
@@ -220,7 +220,7 @@ abbr {
 	font-variant: small-caps;
 	text-transform: lowercase;
 	letter-spacing: .05rem;
-	color: #888888;
+	color: #9B9987;
 }
 var, kbd, samp, code, pre {
 	font-family: Consolas, "Andale Mono", Courier, "Courier New", monospace;
@@ -694,7 +694,7 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-	background: #190B28;
+	background: #E55381;
 	color: #FFFFFF;
 }
 .button.button-primary:hover,
@@ -708,7 +708,7 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-	background: #1f1f1f;
+	background: #685762;
 }
 button.full-width, .button.full-width {
 	width: 100%;
@@ -726,7 +726,8 @@ button.large, .button.large {
 }
 button.stroke, .button.stroke {
 	background: transparent !important;
-	border: 3px solid #190B28;
+	border: 3px solid #E55381;
+	color: #E55381;
 	line-height: 4.8rem;
 }
 button.stroke.medium, .button.stroke.medium {
@@ -932,7 +933,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin: .6rem 0 0 0;
 	font-size: 1.4rem;
 	font-family: "poppins-regular", sans-serif;
-	color: #888888;
+	color: #9B9987;
 }
 
 /**
@@ -945,7 +946,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 .skill-bars li {
 	height: .6rem;
-	background: #a1a1a1;
+	background: lightgrey;
 	width: 100%;
 	margin-bottom: 6rem;
 	padding: 0;
@@ -1023,7 +1024,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	background: #ebebeb;
 }
 .grey-section p.lead {
-	color: #7d7d7d;
+	color: #190B28;
 }
 .section-intro {
 	max-width: 700px;
@@ -1294,8 +1295,6 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background-image: url(../../public/images/intro-bg.png);
-    background-attachment: fixed;
     width: 100%;
     height: 100vh;
     min-height: 720px;
@@ -1310,7 +1309,7 @@ header .logo a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg,#208379 20%,#051514 80%);
+    background: linear-gradient(135deg,#685762 20%,#190B28 80%);
     opacity: .60;
 }
 
@@ -1545,7 +1544,7 @@ header .logo a {
 .about-content .info-list li span {
 	display: block;
 	font-family: "poppins-regular", sans-serif;
-	color: #888888;
+	color: #9B9987;
 	font-size: 1.5rem;
 	line-height: 1;
 }
@@ -1627,9 +1626,6 @@ header .logo a {
 #resume .resume-header {
 	text-align: center;
 }
-#resume .resume-header h2 {
-	color: #685762;
-}
 
 #resume .resume-timeline {
 	max-width: 980px;
@@ -1684,7 +1680,7 @@ header .logo a {
 #resume .timeline-header p {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.6rem;
-	color: #888888;
+	color: #9B9987;
 }
 #resume .timeline-content {
 	margin-left: 35%;
@@ -2116,7 +2112,7 @@ header .logo a {
 	color: #EFA9AE;
 }
 #services .section-intro p {
-	color: rgba(255, 255, 255, 0.7);
+	color: white;
 }
 .services-content {
 	max-width: 1200px;
@@ -2142,7 +2138,7 @@ header .logo a {
 	color: #685762;
 }
 .services-list h3 {
-	color: #FFFFFF;
+	color: #EFA9AE;
 }
 .services-list .desc {
 	color: #FFFFFF;
@@ -2256,7 +2252,10 @@ header .logo a {
 	color: #EFA9AE;
 }
 #contact .section-intro p {
-	color: rgba(255, 255, 255, 0.7);
+	color: white;
+}
+#contact .contact-info p, #contact .contact-info a {
+	color: white;
 }
 
 /* form loader */

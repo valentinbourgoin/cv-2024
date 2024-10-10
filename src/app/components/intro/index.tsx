@@ -1,21 +1,17 @@
-import { useTranslations } from "next-intl";
-
 export default function Intro() {
-  const t = useTranslations("intro");
-
   return (
     <section id="intro">
       <div className="intro-overlay"></div>
       <div className="intro-content">
         <div className="row">
           <div className="col-twelve">
-            <h5>{t("hello")}</h5>
-            <h1>{t("name")}</h1>
+            <h5>Bonjour</h5>
+            <h1>Je suis Valentin Bourgoin.</h1>
             <p className="intro-position">
-              <span>{t("description")}</span>
+              <span>Tech lead engagé ✊</span>
             </p>
             <a className="button stroke smoothscroll" href="#about" title="">
-              {t("more")}
+              En savoir plus
             </a>
           </div>
         </div>

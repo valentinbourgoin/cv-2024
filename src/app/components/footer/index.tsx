@@ -1,24 +1,19 @@
-import { useTranslations } from "next-intl";
-
 export default function Footer() {
-  const t = useTranslations("footer");
-
   return (
     <footer>
       <div className="row">
         <div className="col-eight tab-full">
           <div className="copyright">
-            <span>{t("footer.copyright")}</span>
+            <span>© Copyright 2021 </span>
             <span>
-              {t("footer.design")}{" "}
-              <a href="http://www.styleshout.com/">styleshout</a>
+            Design par <a href="http://www.styleshout.com/">styleshout</a>
             </span>
-            <span>{t("footer.coded")}</span>
+            <span>Codé avec NextJS & amour depuis Nantes 🐘</span>
           </div>
         </div>
 
         <div id="go-top">
-          <a className="smoothscroll" title="Back to Top" href="#top">
+          <a className="smoothscroll" title="Retour en haut" href="#top">
             <i className="fa fa-long-arrow-up"></i>
           </a>
         </div>

@@ -66,7 +66,7 @@ export default function About() {
             
             <li>
               <div className="progress percent90"></div>
-              <strong>Coder (Django, Symfony, React...)</strong>
+              <strong>Coder (Django, React...)</strong>
             </li>
             <li>
               <div className="progress percent90"></div>

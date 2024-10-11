@@ -12,7 +12,7 @@ export default function Resume() {
       "title": "CTO",
       "date": "Déc 2021 - Sept 2024",
       "company": "OMAJ",
-      "text": "OMAJ est un dépôt-vente en ligne de vêtements de seconde main qui met la Tech au service d&apos;une mission : botter les fesses de la fast fashion. <br /><hr />Mise en place de la stack technique. <br />Recrutement et management de l&apos;équipe.<br />Construction de la roadmap et staffing. <br />Mise en place d&apos;une méthodologie de travail et suivi des metrics de performance. <hr />Stack : Django (Celery, Redis, Posgres, ...), React, Shopify."
+      "text": "OMAJ est un dépôt-vente en ligne de vêtements de seconde main qui met la Tech au service d&apos;une mission : botter les fesses de la fast fashion. <br /><hr />Mise en place de la stack technique. <br />Recrutement et management de l&apos;équipe.<br />Construction de la roadmap et staffing. <br />Mise en place d&apos;une méthodologie de travail et suivi des metrics de performance. <hr />Stack : Django (Celery, Redis, Postgres,&nbsp;...), React, Shopify."
     },
     {
       "title": "Senior VP Product",

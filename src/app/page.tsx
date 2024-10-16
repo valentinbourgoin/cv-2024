@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "CV de Valentin Bourgoin, CTO / CPTO / lead dev / formateur indépendant",
   metadataBase: new URL("https://valentinbourgoin.fr"),
   openGraph: {
-    title: "Valentin Bourgoin - Tech Lead freelance",
+    title: "Valentin Bourgoin - Tech Lead engagé",
     description: "CTO / CPTO / lead dev / formateur indépendant",
     images: [
       {

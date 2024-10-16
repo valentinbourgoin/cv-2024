@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Intro() {
   return (
     <section id="intro">
@@ -33,12 +35,22 @@ export default function Intro() {
         </li>
         <li>
           <a target="_blank" href="https://www.komoot.fr/user/984970505637">
-            <img src="/images/icon-komoot.svg" alt="Komoot" />
+            <Image 
+              alt="Komoot" 
+              height={30}
+              src="/images/icon-komoot.svg" 
+              width={30} 
+            />
           </a>
         </li>
         <li>
           <a target="_blank" href="https://www.strava.com/athletes/1999872">
-            <img src="/images/icon-strava.png" alt="Strava" />
+            <Image 
+              alt="Strava"
+              height={30}
+              src="/images/icon-strava.png" 
+              width={30} 
+            />
           </a>
         </li>
       </ul>

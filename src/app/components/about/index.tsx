@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function About() {
   return (
     <section id="about">
@@ -6,7 +8,12 @@ export default function About() {
           <h5>A propos</h5>
           <h1>En quelques mots...</h1>
           <div className="intro-info">
-            <img src="/images/Valentin-Bourgoin.jpeg" alt="Valentin Bourgoin" />
+            <Image 
+              alt="Valentin Bourgoin" 
+              height={300}
+              src="/images/Valentin-Bourgoin.jpeg" 
+              width={300} 
+            />
             <div className="lead">
               Soucieux d&apos;avoir un impact positif sur la société et la planète, 
               j&apos;aide les équipes à livrer et à maximiser leur impact. 

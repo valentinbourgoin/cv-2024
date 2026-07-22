@@ -34,7 +34,7 @@ export default function About() {
           <h2>{t("subtitle")}</h2>
           <div className="intro-info">
             <Image
-              alt="Valentin Bourgoin"
+              alt="Valentin Tilly Bourgoin"
               height={300}
               src="/images/Valentin-Bourgoin.jpeg"
               width={300}

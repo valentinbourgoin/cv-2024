@@ -23,33 +23,48 @@ export default function Intro() {
         <li>
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.linkedin.com/in/valentinbourgoin/"
+            aria-label="LinkedIn"
           >
             <i className="fa fa-linkedin"></i>
           </a>
         </li>
         <li>
-          <a target="_blank" href="https://twitter.com/valentin_">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/valentin_"
+            aria-label="Twitter"
+          >
             <i className="fa fa-twitter"></i>
           </a>
         </li>
         <li>
-          <a target="_blank" href="https://www.komoot.fr/user/984970505637">
-            <Image 
-              alt="Komoot" 
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.komoot.fr/user/984970505637"
+          >
+            <Image
+              alt="Komoot"
               height={30}
-              src="/images/icon-komoot.svg" 
-              width={30} 
+              src="/images/icon-komoot.svg"
+              width={30}
             />
           </a>
         </li>
         <li>
-          <a target="_blank" href="https://www.strava.com/athletes/1999872">
-            <Image 
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.strava.com/athletes/1999872"
+          >
+            <Image
               alt="Strava"
               height={30}
-              src="/images/icon-strava.png" 
-              width={30} 
+              src="/images/icon-strava.png"
+              width={30}
             />
           </a>
         </li>

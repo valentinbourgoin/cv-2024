@@ -20,7 +20,7 @@ export default function About() {
       <div className="row section-intro">
         <div className="col-twelve">
           <h5>A propos</h5>
-          <h1>En quelques mots...</h1>
+          <h2>En quelques mots...</h2>
           <div className="intro-info">
             <Image 
               alt="Valentin Bourgoin" 
@@ -114,6 +114,7 @@ export default function About() {
             href="https://www.malt.fr/profile/valentinbourgoin1"
             title="RDV sur Malt"
             target="_blank"
+            rel="noopener noreferrer"
             className="button button-primary"
           >
             RDV sur Malt

@@ -4,7 +4,7 @@ export default function Contact() {
       <div className="row section-intro">
         <div className="col-twelve">
           <h5>Contact</h5>
-          <h1>Je serai ravi de vous rencontrer.</h1>
+          <h2>Je serai ravi de vous rencontrer.</h2>
           <p className="lead">N&apos;hésitez pas à me contacter pour toute mission !</p>
         </div>
       </div>
@@ -35,6 +35,7 @@ export default function Contact() {
             <a
               href="https://www.malt.fr/profile/valentinbourgoin1"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Mon profil Malt
             </a>

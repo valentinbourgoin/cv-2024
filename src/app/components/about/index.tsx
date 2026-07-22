@@ -45,10 +45,6 @@ export default function About() {
               <span>Valentin Bourgoin</span>
             </li>
             <li>
-              <strong>Age : </strong>
-              <span>37 ans</span>
-            </li>
-            <li>
               <strong>Localisation : </strong>
               <span>Nantes</span>
             </li>

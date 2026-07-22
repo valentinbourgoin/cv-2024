@@ -39,7 +39,7 @@ export default function Resume() {
       <div className="row section-intro">
         <div className="col-twelve">
           <h5>Plus d&apos;infos</h5>
-          <h1>Mon CV</h1>
+          <h2>Mon CV</h2>
 
           <p className="lead">
           Vous trouverez ici mes principales références en tant que CTO, CPO, encadrant pédagogique ou dév web sénior.

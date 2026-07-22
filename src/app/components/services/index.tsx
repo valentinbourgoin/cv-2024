@@ -37,7 +37,7 @@ export default function Services() {
       <div className="row section-intro">
         <div className="col-twelve">
           <h5>Services</h5>
-          <h1>Comment puis-je vous aider ?</h1>
+          <h2>Comment puis-je vous aider ?</h2>
           <p className="lead">
             Vous avez des besoins court-termes sur la stratégie de développement
             d&apos;un MVP, sur l&apos;organisation ou le scale de votre delivery

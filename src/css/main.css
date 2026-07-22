@@ -1034,7 +1034,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-bottom: 3.6rem;
 	position: relative;
 }
-.section-intro h1 {
+.section-intro h2 {
 	font-family: "poppins-semibold", serif;
 	font-size: 3.6rem;
 	color: #190B28;
@@ -1058,12 +1058,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	.section-intro {
 		max-width: 650px;
 	}
-	.section-intro h1 {
+	.section-intro h2 {
 		font-size: 3rem;
 	}
 }
 @media only screen and (max-width:600px) {
-	.section-intro h1 {
+	.section-intro h2 {
 		font-size: 2.6rem;
 	}
 	.section-intro h5 {
@@ -1072,7 +1072,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	}
 }
 @media only screen and (max-width:400px) {
-	.section-intro h1 {
+	.section-intro h2 {
 		font-size: 2.4rem;
 	}
 }
@@ -2105,7 +2105,7 @@ header .logo a {
 	margin-bottom: 1.8rem;
 }
 
-#services .section-intro h1 {
+#services .section-intro h2 {
 	color: white;
 }
 #services .section-intro h5 {
@@ -2245,7 +2245,7 @@ header .logo a {
 	padding-top: 12rem;
 	padding-bottom: 7.2rem;
 }
-#contact .section-intro h1 {
+#contact .section-intro h2 {
 	color: white;
 }
 #contact .section-intro h5 {

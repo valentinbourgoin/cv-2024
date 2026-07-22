@@ -1,5 +1,19 @@
 import Image from 'next/image'
 
+const BIRTH_DATE = new Date(1987, 3, 1); // 01/04/1987
+
+function getAge(birthDate: Date): number {
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const hasHadBirthdayThisYear =
+    today.getMonth() > birthDate.getMonth() ||
+    (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+  if (!hasHadBirthdayThisYear) {
+    age -= 1;
+  }
+  return age;
+}
+
 export default function About() {
   return (
     <section id="about">
@@ -46,7 +60,7 @@ export default function About() {
             </li>
             <li>
               <strong>Age : </strong>
-              <span>37 ans</span>
+              <span>{getAge(BIRTH_DATE)} ans</span>
             </li>
             <li>
               <strong>Localisation : </strong>

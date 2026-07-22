@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="row">
         <div className="col-eight tab-full">
           <div className="copyright">
-            <span>© Copyright 2021 </span>
+            <span>© Copyright {new Date().getFullYear()} </span>
             <span>
             Design par <a href="http://www.styleshout.com/">styleshout</a>
             </span>

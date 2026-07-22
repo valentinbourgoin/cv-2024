@@ -1,4 +1,5 @@
-import Image from 'next/image'
+import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const BIRTH_DATE = new Date(1987, 3, 1); // 01/04/1987
 
@@ -14,31 +15,38 @@ function getAge(birthDate: Date): number {
   return age;
 }
 
+const DAILY_ITEM_KEYS = ["item1", "item2", "item3", "item4", "item5"] as const;
+const SKILLS = [
+  { key: "teamManagement", percent: "percent90" },
+  { key: "coding", percent: "percent90" },
+  { key: "roadmap", percent: "percent90" },
+  { key: "specs", percent: "percent75" },
+] as const;
+
 export default function About() {
+  const t = useTranslations("About");
+
   return (
     <section id="about">
       <div className="row section-intro">
         <div className="col-twelve">
-          <h5>A propos</h5>
-          <h2>En quelques mots...</h2>
+          <h5>{t("title")}</h5>
+          <h2>{t("subtitle")}</h2>
           <div className="intro-info">
-            <Image 
-              alt="Valentin Bourgoin" 
+            <Image
+              alt="Valentin Bourgoin"
               height={300}
-              src="/images/Valentin-Bourgoin.jpeg" 
-              width={300} 
+              src="/images/Valentin-Bourgoin.jpeg"
+              width={300}
             />
             <div className="lead">
-              Soucieux d&apos;avoir un impact positif sur la société et la planète, 
-              j&apos;aide les équipes à livrer et à maximiser leur impact. 
+              {t("leadText")}
               <br />
-              Mon quotidien:
+              {t("dailyLabel")}
               <ul>
-                <li>Constuire une roadmap et prioriser des features.</li>
-                <li>Organiser la delivery et mettre en place des processes.</li>
-                <li>Coder des trucs.</li>
-                <li>Leader des équipes et leur donner une direction et une vision technique.</li>
-                <li>Courir vite et pédaler le plus longtemps possible...</li>
+                {DAILY_ITEM_KEYS.map((key) => (
+                  <li key={key}>{t(`daily.${key}`)}</li>
+                ))}
               </ul>
             </div>
           </div>
@@ -46,58 +54,39 @@ export default function About() {
       </div>
       <div className="row about-content">
         <div className="col-six tab-full">
-          <h3>Profil</h3>
-          <p>
-          Je travaille au sein d&apos;équipes Tech & Produit depuis 15 ans, en tant que CT(P)O, 
-          VP&nbsp;Engineering ou lead dev. Mon background de développeur me permet à la fois de contribuer à la delivery, 
-          tout en étant capable de guider des équipes techniques et en étant obsédé de la qualité du produit 
-          et de l&apos;expérience utilisateurice.
-          </p>
+          <h3>{t("profile.title")}</h3>
+          <p>{t("profile.text")}</p>
           <ul className="info-list">
             <li>
-              <strong>Nom : </strong>
-              <span>Valentin Bourgoin</span>
+              <strong>{t("profile.nameLabel")} </strong>
+              <span>{t("profile.name")}</span>
             </li>
             <li>
-              <strong>Age : </strong>
-              <span>{getAge(BIRTH_DATE)} ans</span>
+              <strong>{t("profile.ageLabel")} </strong>
+              <span>
+                {getAge(BIRTH_DATE)} {t("profile.ageUnit")}
+              </span>
             </li>
             <li>
-              <strong>Localisation : </strong>
-              <span>Nantes</span>
+              <strong>{t("profile.locationLabel")} </strong>
+              <span>{t("profile.location")}</span>
             </li>
             <li>
-              <strong>Email : </strong>
-              <span>hello@valentinbourgoin.fr</span>
+              <strong>{t("profile.emailLabel")} </strong>
+              <span>{t("profile.email")}</span>
             </li>
           </ul>
         </div>
         <div className="col-six tab-full">
-          <h3>Compétences</h3>
-          <p>
-            Je peux rejoindre une équipe en tant que contributeur individuel, 
-            prendre part à la mise en place de processes de delivery, 
-            à la construction et la priorisation d&apos;une roadmap ou encore à l&apos;élaboration d&apos;une architecture technique.
-          </p>
+          <h3>{t("skills.title")}</h3>
+          <p>{t("skills.text")}</p>
           <ul className="skill-bars">
-            <li>
-              <div className="progress percent90"></div>
-              <strong>Management d&apos;équipes</strong>
-            </li>
-            
-            <li>
-              <div className="progress percent90"></div>
-              <strong>Coder (Django, React...)</strong>
-            </li>
-            <li>
-              <div className="progress percent90"></div>
-              <strong>Roadmap produit</strong>
-            </li>
-            <li>
-              <div className="progress percent75"></div>
-              <strong>Spécifications techniques</strong>
-            </li>
-            
+            {SKILLS.map(({ key, percent }) => (
+              <li key={key}>
+                <div className={`progress ${percent}`}></div>
+                <strong>{t(`skills.${key}`)}</strong>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
@@ -108,7 +97,7 @@ export default function About() {
             title="Contact"
             className="button stroke smoothscroll"
           >
-            Contact
+            {t("buttons.contact")}
           </a>
           <a
             href="https://www.malt.fr/profile/valentinbourgoin1"
@@ -117,7 +106,7 @@ export default function About() {
             rel="noopener noreferrer"
             className="button button-primary"
           >
-            RDV sur Malt
+            {t("buttons.hire")}
           </a>
         </div>
       </div>

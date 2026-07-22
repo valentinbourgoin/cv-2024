@@ -1,32 +1,39 @@
 {
-  "intro": {
-    "title": "About", 
-    "subtitle": "Let me introduce myself.", 
-    "text": "Passionate about Tech, Product and Sports, I help teams deliver and achieve their goals. <br />My day-to-day:<ul><li>Solve problems, a lot.</li><li>Build a roadmap and prioritize features.</li><li>Lead teams and give technical direction.</li><li>Organize delivery and set up processes.</li><li>Run as fast as possible and pedal as long as possible...</li></ul>"
-  }, 
-  "profile": {
-    "title": "Profile",
-    "text": "Graduated as an engineer, I have been working for 12 years closely with Tech & Product teams. My background as a developer gives me the opportunity to lead technical teams while being obsessed with product quality and user experience.",
-    "name_title": "Fullname:",
-    "name_text": "Valentin Bourgoin",
-    "age_title": "Age:",
-    "age_text": "34 yo",
-    "location_title": "Location:",
-    "location_text": "Nantes, France",
-    "email_title": "Email:",
-    "email_text": "hello@valentinbourgoin.fr"
-  },
-  "skills": {
-    "title": "Skills", 
-    "text": "I can take part in the setup of delivery processes, the general management of teams, the building of a roadmap or the choice of technical architecture for the product.",
-    "skill1": "Team management",
-    "skill2": "Agile methodologies",
-    "skill3": "Product Roadmap",
-    "skill4": "Technical specifications",
-    "skill5": "Code (Django, Symfony, React...)"
-  }, 
-  "buttons": {
-    "contact": "Contact me",
-    "hire": "Hire me on Malt"
+  "About": {
+    "title": "About",
+    "subtitle": "In a few words...",
+    "leadText": "Committed to having a positive impact on society and the planet, I help teams deliver and maximize their impact.",
+    "dailyLabel": "My day-to-day:",
+    "daily": {
+      "item1": "Build a roadmap and prioritize features.",
+      "item2": "Organize delivery and set up processes.",
+      "item3": "Code stuff.",
+      "item4": "Lead teams and give them technical direction and vision.",
+      "item5": "Run fast and pedal as long as possible..."
+    },
+    "profile": {
+      "title": "Profile",
+      "text": "I have been working within Tech & Product teams for 15 years, as a CT(P)O, VP Engineering or lead dev. My background as a developer lets me both contribute to delivery and guide technical teams, all while being obsessed with product quality and user experience.",
+      "nameLabel": "Name:",
+      "name": "Valentin Bourgoin",
+      "ageLabel": "Age:",
+      "ageUnit": "y/o",
+      "locationLabel": "Location:",
+      "location": "Nantes, France",
+      "emailLabel": "Email:",
+      "email": "hello@valentinbourgoin.fr"
+    },
+    "skills": {
+      "title": "Skills",
+      "text": "I can join a team as an individual contributor, take part in setting up delivery processes, building and prioritizing a roadmap, or defining a technical architecture.",
+      "teamManagement": "Team management",
+      "coding": "Coding (Django, React...)",
+      "roadmap": "Product roadmap",
+      "specs": "Technical specifications"
+    },
+    "buttons": {
+      "contact": "Contact",
+      "hire": "Hire me on Malt"
+    }
   }
 }

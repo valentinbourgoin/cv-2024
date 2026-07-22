@@ -1,6 +1,8 @@
 {
-  "hello": "Bonjour",
-  "name": "Je suis Valentin Bourgoin.",
-  "description": "Tech lead engagé ✊",
-  "more": "En savoir plus"
+  "Intro": {
+    "hello": "Bonjour",
+    "name": "Je suis Valentin Bourgoin.",
+    "description": "Tech lead engagé ✊",
+    "more": "En savoir plus"
+  }
 }

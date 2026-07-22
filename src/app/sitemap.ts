@@ -1,12 +1,12 @@
 import { MetadataRoute } from "next";
 
+import { routing } from "@/i18n/routing";
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: "https://valentinbourgoin.fr",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 1,
-    },
-  ];
+  return routing.locales.map((locale) => ({
+    url: `https://valentinbourgoin.fr/${locale}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 1,
+  }));
 }

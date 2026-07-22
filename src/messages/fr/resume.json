@@ -8,6 +8,12 @@
     "work": {
       "title": "Expériences professionnelles",
       "works": {
+        "freelanceTechLead": {
+          "title": "Tech Lead freelance",
+          "date": "Depuis 2024",
+          "company": "Speeral, Hourrail, API Engagement (beta.gouv)",
+          "text": "Missions de Tech Lead freelance pour plusieurs clients. <br></br><hr></hr>Contribution individuelle au code. <br></br>Direction technique et construction de la roadmap produit. <br></br>Mise en place de processes de delivery. <hr></hr>Stack : Typescript, NodeJS, Postgres."
+        },
         "ada": {
           "title": "Encadrant",
           "date": "Depuis Déc 2021",

@@ -8,6 +8,12 @@
     "work": {
       "title": "Professional Experience",
       "works": {
+        "freelanceTechLead": {
+          "title": "Freelance Tech Lead",
+          "date": "Since 2024",
+          "company": "Speeral, Hourrail, API Engagement (beta.gouv)",
+          "text": "Freelance Tech Lead missions for several clients. <br></br><hr></hr>Individual contributor coding. <br></br>Technical leadership and product roadmap building. <br></br>Setting up delivery processes. <hr></hr>Stack: Typescript, NodeJS, Postgres."
+        },
         "ada": {
           "title": "Mentor",
           "date": "Since Dec 2021",

@@ -1,7 +1,8 @@
 import { useTranslations } from "next-intl";
 
 const WORKS = [
-  { key: "ada", highlighted: true },
+  { key: "freelanceTechLead", highlighted: true },
+  { key: "ada", highlighted: false },
   { key: "omaj", highlighted: false },
   { key: "sportHeroes", highlighted: false },
   { key: "wnp909c", highlighted: false },

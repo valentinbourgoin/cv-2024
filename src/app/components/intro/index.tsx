@@ -1,19 +1,24 @@
-import Image from "next/image"
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+
+import { Link } from "@/i18n/navigation";
 
 export default function Intro() {
+  const t = useTranslations("Intro");
+
   return (
     <section id="intro">
       <div className="intro-overlay"></div>
       <div className="intro-content">
         <div className="row">
           <div className="col-twelve">
-            <h5>Bonjour</h5>
-            <h1>Je suis Valentin Bourgoin.</h1>
+            <h5>{t("hello")}</h5>
+            <h1>{t("name")}</h1>
             <p className="intro-position">
-              <span>Tech lead engagé ✊</span>
+              <span>{t("description")}</span>
             </p>
             <a className="button stroke smoothscroll" href="#about" title="">
-              En savoir plus
+              {t("more")}
             </a>
           </div>
         </div>
@@ -67,6 +72,14 @@ export default function Intro() {
               width={30}
             />
           </a>
+        </li>
+        <li className="lang-switch">
+          <Link href="/" locale="fr" aria-label="Français">
+            🇫🇷
+          </Link>
+          <Link href="/" locale="en" aria-label="English">
+            🇬🇧
+          </Link>
         </li>
       </ul>
     </section>

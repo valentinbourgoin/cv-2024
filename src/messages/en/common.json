@@ -1,11 +1,14 @@
 {
-  "meta": {
-    "title": "Valentin Bourgoin | CTO / CPO on-demand",
-    "description": "Passionate about Tech, Product and Sports, I help teams deliver and achieve their goals. I have been working for 12 years closely with Tech & Product teams. My background as an engineer gives me the opportunity to be involved in the technical direction while being obsessed with product quality and user experience."
+  "Meta": {
+    "title": "Valentin Bourgoin - Freelance Tech Lead",
+    "description": "Valentin Bourgoin's CV — CTO / CPTO / lead developer / independent trainer",
+    "ogTitle": "Valentin Bourgoin - Committed Tech Lead",
+    "ogDescription": "CTO / CPTO / lead developer / independent trainer"
   },
-  "footer": {
-    "copyright": "© Copyright 2021 ",
+  "Footer": {
+    "copyright": "© Copyright",
     "design": "Design by",
-    "coded": "Coded with NextJS & love in Nantes 🐘"
+    "coded": "Coded with NextJS & love in Nantes 🐘",
+    "backToTop": "Back to top"
   }
 }

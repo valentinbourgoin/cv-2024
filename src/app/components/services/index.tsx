@@ -16,7 +16,7 @@ export default function Services() {
     <section id="services">
       <div className="row section-intro">
         <div className="col-twelve">
-          <h5>{t("title")}</h5>
+          <p className="h05">{t("title")}</p>
           <h2>{t("subtitle")}</h2>
           <p className="lead">{t("text")}</p>
         </div>

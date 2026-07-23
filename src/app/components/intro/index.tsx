@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 
 export default function Intro() {
   const t = useTranslations("Intro");
+  const tCommon = useTranslations("Common");
 
   return (
     <section id="intro">
@@ -12,7 +13,7 @@ export default function Intro() {
       <div className="intro-content">
         <div className="row">
           <div className="col-twelve">
-            <h5>{t("hello")}</h5>
+            <p className="h05">{t("hello")}</p>
             <h1>{t("name")}</h1>
             <p className="intro-position">
               <span>{t("description")}</span>
@@ -30,7 +31,7 @@ export default function Intro() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/valentinbourgoin/"
-            aria-label="LinkedIn"
+            aria-label={`LinkedIn (${tCommon("newWindow")})`}
           >
             <i className="fa fa-linkedin"></i>
           </a>
@@ -40,7 +41,7 @@ export default function Intro() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://twitter.com/valentin_"
-            aria-label="Twitter"
+            aria-label={`Twitter (${tCommon("newWindow")})`}
           >
             <i className="fa fa-twitter"></i>
           </a>
@@ -52,7 +53,7 @@ export default function Intro() {
             href="https://www.komoot.fr/user/984970505637"
           >
             <Image
-              alt="Komoot"
+              alt={`Komoot (${tCommon("newWindow")})`}
               height={30}
               src="/images/icon-komoot.svg"
               width={30}
@@ -66,7 +67,7 @@ export default function Intro() {
             href="https://www.strava.com/athletes/1999872"
           >
             <Image
-              alt="Strava"
+              alt={`Strava (${tCommon("newWindow")})`}
               height={30}
               src="/images/icon-strava.png"
               width={30}

@@ -16,8 +16,8 @@ export default function Resume() {
     <section id="resume" className="grey-section">
       <div className="row section-intro">
         <div className="col-twelve">
-          <h5>{t("intro.title")}</h5>
-          <h1>{t("intro.subtitle")}</h1>
+          <p className="h05">{t("intro.title")}</p>
+          <h2>{t("intro.subtitle")}</h2>
 
           <p className="lead">{t("intro.text")}</p>
         </div>
@@ -25,7 +25,7 @@ export default function Resume() {
 
       <div className="row resume-timeline">
         <div className="col-twelve resume-header">
-          <h2>{t("work.title")}</h2>
+          <h3>{t("work.title")}</h3>
         </div>
 
         <div className="col-twelve">
@@ -39,7 +39,7 @@ export default function Resume() {
                   <i className="fa fa-briefcase"></i>
                 </div>
                 <div className="timeline-header">
-                  <h3>{t(`work.works.${key}.title`)}</h3>
+                  <h4>{t(`work.works.${key}.title`)}</h4>
                   <p>{t(`work.works.${key}.date`)}</p>
                 </div>
                 <div className="timeline-content">
@@ -59,7 +59,7 @@ export default function Resume() {
 
       <div className="row resume-timeline">
         <div className="col-twelve resume-header">
-          <h2>{t("school.title")}</h2>
+          <h3>{t("school.title")}</h3>
         </div>
 
         <div className="col-twelve">
@@ -69,7 +69,7 @@ export default function Resume() {
                 <i className="fa fa-graduation-cap"></i>
               </div>
               <div className="timeline-header">
-                <h3>{t("school.degree")}</h3>
+                <h4>{t("school.degree")}</h4>
                 <p>{t("school.date")}</p>
               </div>
 

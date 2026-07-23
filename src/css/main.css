@@ -2397,7 +2397,10 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 footer {
+	padding-top: 3rem;
 	padding-bottom: 3rem;
+	background: #190B28;
+	color: #FFFFFF;
 	font-size: 1.4rem;
 	font-family: "poppins-regular", sans-serif;
 }
@@ -2409,6 +2412,11 @@ footer a:hover, footer a:focus {
 }
 footer .row {
 	max-width: 900px;
+}
+footer .col-eight {
+	float: none;
+	width: 100%;
+	text-align: center;
 }
 footer .social {
 	text-align: right;

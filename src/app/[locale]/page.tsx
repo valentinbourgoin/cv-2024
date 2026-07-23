@@ -9,6 +9,7 @@ import About from "../components/about";
 import Resume from "../components/resume";
 import Services from "../components/services";
 import Contact from "../components/contact";
+import Footer from "../components/footer";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -54,12 +55,15 @@ export default async function IndexPage({
   setRequestLocale(locale);
 
   return (
-    <div className="container">
-      <Intro />
-      <About />
-      <Services />
-      <Resume />
-      <Contact />
-    </div>
+    <>
+      <main id="main-content" className="container">
+        <Intro />
+        <About />
+        <Services />
+        <Resume />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }

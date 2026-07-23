@@ -17,20 +17,21 @@ function getAge(birthDate: Date): number {
 
 const DAILY_ITEM_KEYS = ["item1", "item2", "item3", "item4", "item5"] as const;
 const SKILLS = [
-  { key: "teamManagement", percent: "percent90" },
-  { key: "coding", percent: "percent90" },
-  { key: "roadmap", percent: "percent90" },
-  { key: "specs", percent: "percent75" },
+  { key: "teamManagement", percent: "percent90", value: 90 },
+  { key: "coding", percent: "percent90", value: 90 },
+  { key: "roadmap", percent: "percent90", value: 90 },
+  { key: "specs", percent: "percent75", value: 75 },
 ] as const;
 
 export default function About() {
   const t = useTranslations("About");
+  const tCommon = useTranslations("Common");
 
   return (
     <section id="about">
       <div className="row section-intro">
         <div className="col-twelve">
-          <h5>{t("title")}</h5>
+          <p className="h05">{t("title")}</p>
           <h2>{t("subtitle")}</h2>
           <div className="intro-info">
             <Image
@@ -81,9 +82,11 @@ export default function About() {
           <h3>{t("skills.title")}</h3>
           <p>{t("skills.text")}</p>
           <ul className="skill-bars">
-            {SKILLS.map(({ key, percent }) => (
+            {SKILLS.map(({ key, percent, value }) => (
               <li key={key}>
-                <div className={`progress ${percent}`}></div>
+                <div className={`progress ${percent}`}>
+                  <span>{value}%</span>
+                </div>
                 <strong>{t(`skills.${key}`)}</strong>
               </li>
             ))}
@@ -107,6 +110,7 @@ export default function About() {
             className="button button-primary"
           >
             {t("buttons.hire")}
+            <span className="sr-only"> ({tCommon("newWindow")})</span>
           </a>
         </div>
       </div>

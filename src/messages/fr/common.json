@@ -1,4 +1,8 @@
 {
+  "Common": {
+    "skipToContent": "Aller au contenu principal",
+    "newWindow": "nouvelle fenêtre"
+  },
   "Meta": {
     "title": "Valentin Tilly Bourgoin - Tech Lead freelance",
     "description": "CV de Valentin Tilly Bourgoin, CTO / CPTO / lead dev / formateur indépendant",

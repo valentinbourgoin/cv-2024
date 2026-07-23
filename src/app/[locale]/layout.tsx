@@ -4,7 +4,7 @@ import "../../css/fonts.css";
 import "../../css/main.css";
 
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 import { routing } from "@/i18n/routing";
@@ -26,10 +26,14 @@ export default async function LocaleLayout({
     notFound();
   }
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "Common" });
 
   return (
     <html lang={locale}>
       <body>
+        <a href="#main-content" className="skip-link">
+          {t("skipToContent")}
+        </a>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
